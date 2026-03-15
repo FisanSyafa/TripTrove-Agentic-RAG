@@ -1,0 +1,26 @@
+# Core Dependencies
+langchain==0.3.13
+langchain-ollama==0.2.2
+langchain-community==0.3.13
+langgraph==0.2.59
+
+# Vector Store
+chromadb==0.5.23
+
+# Database
+mysql-connector-python==9.1.0
+
+# Search & Tools
+duckduckgo-search==8.1.1
+pypdf==5.1.0
+
+# UI
+streamlit==1.41.1
+streamlit-chat==0.1.1
+
+# Visualization
+plotly==5.24.1
+pandas==2.2.3
+
+# Utilities
+python-dotenv==1.0.1

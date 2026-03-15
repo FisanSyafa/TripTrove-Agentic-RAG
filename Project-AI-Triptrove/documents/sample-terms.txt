@@ -1,0 +1,19 @@
+# SAMPLE: TripTrove Terms & Conditions
+
+Ini adalah contoh file. Ganti dengan PDF asli Anda.
+
+Untuk testing, Anda bisa:
+1. Buat PDF dari dokumen Word/Google Docs
+2. Download sample PDF dari internet
+3. Atau biarkan kosong (sistem tetap jalan)
+
+Contoh konten yang bisa dimasukkan:
+- Terms and Conditions
+- Privacy Policy
+- Travel Guidelines
+- Destination Information
+- FAQ
+- Company Policies
+
+Setelah ada PDF, jalankan:
+python data_loader.py

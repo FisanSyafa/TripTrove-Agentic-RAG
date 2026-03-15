@@ -1,0 +1,245 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    TRIPTROVE AGENTIC RAG SYSTEM                              ║
+║                         Struktur Project                                     ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Project-AI-Triptrove/
+│
+├── 📋 DOKUMENTASI
+│   ├── README.md                    ⭐ Dokumentasi utama (baca ini!)
+│   ├── MULAI_DISINI.md             🚀 Panduan quick start
+│   ├── PANDUAN_PENGGUNAAN.md       📖 Panduan lengkap (Bahasa Indonesia)
+│   ├── QUICK_START.md              ⚡ Quick start guide
+│   ├── ARCHITECTURE.md             🏗️ Arsitektur sistem
+│   ├── CHANGELOG.md                📝 Riwayat perubahan
+│   ├── PROJECT_SUMMARY.md          📊 Ringkasan project
+│   └── STRUKTUR_PROJECT.txt        📁 File ini
+│
+├── 🤖 CORE SYSTEM
+│   ├── agent_rag.py                🧠 Agentic RAG system (otak utama)
+│   │   └── Fitur:
+│   │       • LangGraph orchestration
+│   │       • Self-evaluation
+│   │       • Iterative refinement
+│   │       • Multi-source retrieval
+│   │
+│   ├── data_loader.py              📦 Data loader (MySQL → ChromaDB)
+│   │   └── Fitur:
+│   │       • Load tour packages
+│   │       • Load reviews
+│   │       • Generate embeddings
+│   │       • Store to vector DB
+│   │
+│   ├── config.py                   ⚙️ Configuration management
+│   │   └── Fitur:
+│   │       • Environment variables
+│   │       • Database config
+│   │       • Model parameters
+│   │       • Validation
+│   │
+│   ├── utils.py                    🛠️ Utility functions
+│   │   └── Fitur:
+│   │       • Price formatting
+│   │       • Text processing
+│   │       • Data validation
+│   │       • Helper functions
+│   │
+│   └── analytics.py                📊 Analytics & monitoring
+│       └── Fitur:
+│           • Query logging
+│           • Performance tracking
+│           • Error logging
+│           • Report generation
+│
+├── 💻 USER INTERFACES
+│   ├── app.py                      🎨 Basic Streamlit UI
+│   │   └── Fitur:
+│   │       • Chat interface
+│   │       • Example queries
+│   │       • Chat history
+│   │       • Simple & clean
+│   │
+│   ├── advanced_app.py             🎨 Advanced UI
+│   │   └── Fitur:
+│   │       • Multi-language (ID/EN)
+│   │       • Export chat history
+│   │       • Advanced statistics
+│   │       • Enhanced UX
+│   │
+│   └── dashboard.py                📈 Analytics dashboard
+│       └── Fitur:
+│           • Performance monitoring
+│           • Query analytics
+│           • Trend visualization
+│           • Error tracking
+│
+├── 🔧 TOOLS & SCRIPTS
+│   ├── setup.bat                   🚀 Setup otomatis (Windows)
+│   ├── run.bat                     ▶️ Run aplikasi cepat
+│   ├── check_system.py             ✅ System validation
+│   └── test_agent.py               🧪 Interactive testing
+│
+├── ⚙️ CONFIGURATION
+│   ├── .env                        🔐 Environment variables (EDIT INI!)
+│   ├── .env.example                📄 Template konfigurasi
+│   ├── .gitignore                  🚫 Git ignore rules
+│   └── requirements.txt            📦 Python dependencies
+│
+├── 📓 NOTEBOOK
+│   └── agent_rag.ipynb             📔 Jupyter notebook (testing)
+│
+└── 📁 DATA (Auto-generated)
+    ├── chroma_db/                  💾 Vector store (ChromaDB)
+    └── analytics.json              📊 Analytics data
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                           CARA MENGGUNAKAN                                   ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+🎯 UNTUK PEMULA:
+   1. Baca: MULAI_DISINI.md
+   2. Jalankan: setup.bat
+   3. Jalankan: run.bat
+   4. Buka browser: http://localhost:8501
+
+📚 UNTUK PENGGUNA:
+   1. Baca: PANDUAN_PENGGUNAAN.md
+   2. Explore: app.py (basic) atau advanced_app.py
+   3. Monitor: dashboard.py
+
+👨‍💻 UNTUK DEVELOPER:
+   1. Baca: ARCHITECTURE.md
+   2. Study: agent_rag.py, data_loader.py
+   3. Customize: config.py, utils.py
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                          FILE PENTING                                        ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+⭐ WAJIB DIBACA:
+   • MULAI_DISINI.md          → Panduan quick start
+   • README.md                → Dokumentasi lengkap
+   • .env                     → EDIT password database Anda!
+
+🔧 WAJIB DIJALANKAN (Setup):
+   • setup.bat                → Setup otomatis
+   • python data_loader.py    → Load data ke ChromaDB
+
+▶️ UNTUK MENJALANKAN:
+   • run.bat                  → Jalankan aplikasi
+   • streamlit run app.py     → Jalankan manual
+
+✅ UNTUK TESTING:
+   • python check_system.py   → Cek sistem
+   • python test_agent.py     → Test agent
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         TEKNOLOGI YANG DIGUNAKAN                             ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+🧠 AI & ML:
+   • Llama 3.1 (via Ollama)   → LLM utama
+   • Nomic-Embed-Text         → Embedding model
+   • LangChain                → LLM framework
+   • LangGraph                → Agent orchestration
+
+💾 Database:
+   • ChromaDB                 → Vector database
+   • MySQL                    → Source database
+
+🎨 UI & Visualization:
+   • Streamlit                → Web interface
+   • Plotly                   → Charts & graphs
+
+🔍 Tools:
+   • DuckDuckGo Search        → Web search
+   • python-dotenv            → Configuration
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                            FITUR UTAMA                                       ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+✨ Agentic RAG:
+   • AI yang bisa berpikir dan mengulang pencarian
+   • Self-evaluation untuk kualitas jawaban
+   • Iterative refinement jika perlu
+
+🔍 Multi-Source Retrieval:
+   • Cari di database (ChromaDB)
+   • Cari di web (DuckDuckGo)
+   • Kombinasi hasil dari berbagai sumber
+
+💯 100% Lokal & Gratis:
+   • Tidak ada biaya API
+   • Privacy terjaga
+   • Berjalan di komputer Anda
+   • Full control
+
+🎨 User-Friendly:
+   • Interface yang mudah digunakan
+   • Contoh pertanyaan
+   • Riwayat chat
+   • Export functionality
+
+📊 Monitoring:
+   • Performance tracking
+   • Query analytics
+   • Error logging
+   • Trend visualization
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         TROUBLESHOOTING CEPAT                                ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+❌ Agent tidak bisa diinisialisasi?
+   → Jalankan: ollama serve
+   → Cek: ollama list
+
+❌ Database connection error?
+   → Edit file .env
+   → Cek username dan password
+
+❌ Data tidak ditemukan?
+   → Jalankan: python data_loader.py
+
+❌ UI tidak muncul?
+   → Coba port lain: streamlit run app.py --server.port 8502
+
+❌ Model tidak ditemukan?
+   → Pull model: ollama pull llama3.1
+   → Pull embedding: ollama pull nomic-embed-text
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                            CONTACT & SUPPORT                                 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📚 Dokumentasi: Baca file-file .md di folder ini
+🐛 Bug Report: Buat issue di repository
+💡 Feature Request: Buat issue dengan label "enhancement"
+❓ Pertanyaan: Baca PANDUAN_PENGGUNAAN.md atau buat issue
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                              VERSION INFO                                    ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Version: 1.0.0
+Release Date: 2026-03-10
+Status: ✅ Production Ready
+License: Open Source
+
+Made with ❤️ using 100% Free & Open Source Technology
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+                        🏝️ TripTrove AI Assistant 🏝️
+                    Selamat Menggunakan & Happy Coding!
+
+═══════════════════════════════════════════════════════════════════════════════
